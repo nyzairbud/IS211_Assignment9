@@ -8,6 +8,7 @@ soup = BeautifulSoup(html.read(), "lxml")
 
 
 def stockprices():
+
     filein = soup.find_all('tr')
 
     for row in filein:
